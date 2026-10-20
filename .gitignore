@@ -1,0 +1,16 @@
+# partial archives from interrupted runs
+*.partial
+
+# logs
+*.log
+
+# metrics files
+*.prom
+
+# archives and checksums
+*.tar.gz
+*.sha256
+
+# real config and secrets
+bash/backup.conf
+.env

@@ -1,0 +1,14 @@
+# backup.conf.example: copy to backup.conf and edit. Sourced by backup.sh via -c.
+# Same names as the environment variables. CLI flags and env vars override these.
+
+# Folder to back up (required unless passed on the command line)
+BACKUP_SOURCE="/path/to/source"
+
+# Folder where archives, logs and metrics are written (required)
+BACKUP_DEST="/path/to/dest"
+
+# Delete archives older than this many days
+BACKUP_RETENTION_DAYS=7
+
+# Always keep at least this many newest archives, even if old
+BACKUP_KEEP_MIN=3
